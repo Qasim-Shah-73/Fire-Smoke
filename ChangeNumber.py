@@ -4,6 +4,10 @@ from tkinter import *
 def btn_clicked():
     print("Button Clicked")
 
+def Signout():
+    window3.destroy()
+    import login
+
 def video_import():
     window3.destroy()
     import home
@@ -36,7 +40,7 @@ b0 = Button(
     image = img012,
     borderwidth = 0,
     highlightthickness = 0,
-    command = btn_clicked,
+    command = Signout,
     relief = "flat")
 
 b0.place(
