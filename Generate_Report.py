@@ -5,21 +5,22 @@ def btn_clicked():
     print("Button Clicked")
 
 def video_import():
-    print("")
+    window4.destroy()
+    import home
 
 def ChangeNum():
-    window2.destroy()
+    window4.destroy()
     import ChangeNumber
 def GenerateReport():
-    window2.destroy()
-    import Generate_Report
+    print("")
 
-window2 = Tk()
-window2.title('Fire & Smoke Detector')
-window2.geometry("900x600")
-window2.configure(bg = "#363740")
+
+window4 = Tk()
+window4.title('Fire & Smoke Detector')
+window4.geometry("900x600")
+window4.configure(bg = "#363740")
 canvas = Canvas(
-    window2,
+    window4,
     bg = "#363740",
     height = 600,
     width = 900,
@@ -29,7 +30,7 @@ canvas = Canvas(
 canvas.place(x = 0, y = 0)
 
 
-img0 = PhotoImage(file = f"signout.png")
+img0 = PhotoImage(file = f"signOut1.png")
 b0 = Button(
     image = img0,
     borderwidth = 0,
@@ -112,10 +113,10 @@ b5.place(
     height = 42)
 
 
-background_img = PhotoImage(file = f"background3.png")
+background_img = PhotoImage(file = f"background5.png")
 background = canvas.create_image(
     466.0, 302.0,
     image=background_img)
 
-window2.resizable(False, False)
-window2.mainloop()
+window4.resizable(False, False)
+window4.mainloop()
